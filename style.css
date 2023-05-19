@@ -7,24 +7,34 @@
 .homepage{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(65, 65, 65, 0.85)),url(img/Two\ of\ Tano\ Bora_VJ26429\ copy\ 2.jpg);
-    background-size: cover;
-    background-position: center;
+    
     /*position: fixed;*/
 
 }
+.landing {
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(65, 65, 65, 0.85)),url(img/Two\ of\ Tano\ Bora_VJ26429\ copy\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content {
+    margin: 0 3%;
+    padding: 7% 0;
+    text-align: center;
+}
 .title{
-    font-size: 70px;
-    line-height:100px;
+    font-size: 4.5rem;
     font-weight: bold;
     color: white;
-    height: 100px;
-    text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
+.company-desc {
+    color: burlywood;
+    margin-left: 1%;
+}
+
 .tit-slider{
     color: burlywood;
     margin-left: 12px;
@@ -75,7 +85,7 @@ nav{
     letter-spacing: 1px;
     cursor: pointer;
 }
-span{
+#logo-m{
     color: rgb(103, 177, 149);
 }
 nav ul li{
@@ -108,12 +118,7 @@ nav ul li a:hover{
 .btn:hover{
     transform: scale(1.2);
 }
-.content{
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    transform: translateY(-30%);
-}
+
 /*.slider-frame{
     overflow: hidden;
     height: 1800px;
@@ -182,10 +187,11 @@ h1{
 }
 .description h3{
     color: white;
-    font-size: 25px;
+    font-size: 1.5rem;
     display: block;
     width: 60%;
-    margin-top: 12%;
+    margin: auto;
+    margin-top: 8%;
 
 }
 .description h4{
@@ -194,7 +200,8 @@ h1{
     font-size: 1.3rem;
     display: block;
     width: 50%;
-    margin-top: 10%;
+    margin: auto;
+    margin-top: 7%;
 }
 .about{
     width: 100%;
@@ -203,10 +210,10 @@ h1{
 }
 .about img{
     height: auto;
-    width: 430px;
+    width: 100%;
 }
 .about-text{
-    width: 550px;
+    width: 80%;
 }
 .main{
     width:1130px;
@@ -220,9 +227,9 @@ h1{
 
 .about-text h2{
     color: rgb(97, 92, 87);
-    font-size: 75px;
+    font-size: 4.5rem;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 .about-text h5{
     color: rgb(97, 92, 87);
@@ -256,11 +263,11 @@ button:hover{
 .services{
     background: rgb(94, 89, 84);
     width: 100%;
-    padding: 100px 0px;
+    padding: 5% 0;
 }
 .title h2{
     color: white;
-    font-size: 75px;
+    font-size: 4.5rem;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
@@ -273,14 +280,14 @@ button:hover{
     
 }
 .card{
-    height: 480px;
-    width: 365px;
+    max-height: 480px;
+    max-width: 365px;
     padding: 20px 35px;
     background: rgb(68, 68, 68);
     border-radius: 20px;
     margin: 15px;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     text-align: center;
 }
 .card i{
@@ -319,12 +326,12 @@ h5{
 }
 .contact-us{
     width: 100%;
-    height: 250px;
+    /* height: 30%; */
+    padding: 2% 0;
     background: #303030;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
 .contact-us p{
     color: white;
@@ -351,7 +358,7 @@ h5{
 footer{
     position: relative;
     width: 100%;
-    height: 320px;
+    /* height: 35%; */
     background: #444141;
     display: flex;
     flex-direction: column;
@@ -367,7 +374,7 @@ footer p:nth-child(1){
 footer p:nth-child(2){
     color: rgb(172, 171, 170);
     font-size: 17px;
-    width: 500px;
+    max-width: 90%;
     text-align: center;
     line-height: 26px;
 }
@@ -397,8 +404,8 @@ footer p:nth-child(2){
 .end{
     position: absolute;
     color: black;
-    bottom: 35px;
     font-size: 18px;
+    bottom: 5%;
 }
 #menu-icon{
     color: white;
@@ -421,8 +428,56 @@ footer p:nth-child(2){
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (min-width: 800px) {
+    .about-text {
+        margin-left: 5%;
+    }
+    footer {
+        padding: 4%;
+    }
+    footer p:nth-child(2) {
+        width: 50%;
+    }
+}
 @media (max-width: 800px) {
+    .title, .title h2 {
+        font-size: 4rem;
+    }
+
+    #company-title {
+        display: inline-block;
+    }
+
+    .description h3 {
+        font-size: 1.4rem;
+    }
+
+    .description h4 {
+        font-size: 1.2rem;
+    }
+
     .flex-container {
       flex-direction: column;
     }
+
+    .about-text {
+        margin-top: 10%;
+    }
+
+    .about-text h2 {
+        font-size: 4rem;
+    }
+
+    .contact-us {
+        padding-top: 8%;
+    }
+
+    footer {
+        padding: 10%;
+        padding-bottom: 15%;
+    }
+    footer p:nth-child(2) {
+        width: 80%;
+    }
+
   }
