@@ -1,0 +1,428 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.homepage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(65, 65, 65, 0.85)),url(img/Two\ of\ Tano\ Bora_VJ26429\ copy\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    /*position: fixed;*/
+
+}
+.title{
+    font-size: 70px;
+    line-height:100px;
+    font-weight: bold;
+    color: white;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.tit-slider{
+    color: burlywood;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: tit-slider 6s linear infinite;
+}
+@keyframes tit-slider{
+    0%{margin-top: -400px;}
+    5%{margin-top: -200px;}
+    30%{margin-top: -200px;}
+    35%{margin-top: 0px;}
+    65%{margin-top: 0px;}
+    70%{margin-top: 200px;}
+    100%{margin-top: 200px;}
+}
+.navbar{
+    /*position: fixed;*/
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 25px 3%; /* can reomve*/
+    border-bottom: 1px solid transparent;
+    transition: all .40 ease;
+}
+nav .sticky{
+    padding: 100px 0%;
+    background: var(--bg-color);
+    border-bottom: 5px solid #1d3eaa;
+    transition: 3s;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: gray;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: rgb(103, 177, 149);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: rgb(82, 80, 77);
+    transition: .4s;
+}
+.btn{
+    background-color: burlywood;
+    color:  rgb(71, 70, 68);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    transform: translateY(-30%);
+}
+/*.slider-frame{
+    overflow: hidden;
+    height: 1800px;
+    width: 100%;
+    margin: 0px;
+    left: 0px;
+}
+    /*--SLIDE ANIMATIONS--
+
+@keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 100px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+}
+    @-webkit-keyframes slide_animation{
+        0% {left:0px;}
+        10% {left: 0px;}
+        20% {left: 1200px;}
+        30% {left: 1200px;}
+        40% {left: 2400px;}
+        50% {left: 2400px;}
+        60% {left: 1200px;}
+        70% {left: 1200px;}
+        80% {left: 0px;}
+        90% {left: 0px;}
+        100% {left: 0px;}
+
+    }
+.slide-images{
+    width: 300%;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    overflow: hidden;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+.img-container{
+    height: 1800px;
+    width: 1200px;
+    position: relative;
+    float:left; 
+}*/
+h1{
+    color: rgb(146, 143, 138);
+    margin: 20px 0px 20px;
+    font-size: 75px;
+    margin-top: 70px;
+    
+}
+.description h3{
+    color: white;
+    font-size: 25px;
+    display: block;
+    width: 60%;
+    margin-top: 12%;
+
+}
+.description h4{
+    color: rgb(231, 214, 191);
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    display: block;
+    width: 50%;
+    margin-top: 10%;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: rgb(206, 200, 192);
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width:1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around ;
+}
+
+.about-text h2{
+    color: rgb(97, 92, 87);
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: rgb(97, 92, 87);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: rgb(97, 92, 87);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: bisque;
+    color: rgb(80, 77, 74);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s ;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(94, 94, 94);
+    cursor: pointer;
+}
+.services{
+    background: rgb(94, 89, 84);
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    
+}
+.card{
+    height: 480px;
+    width: 365px;
+    padding: 20px 35px;
+    background: rgb(68, 68, 68);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(196, 180, 152);
+    
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: rgb(172, 171, 170);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color:  rgb(97, 92, 87);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s ;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid  rgb(97, 92, 87);
+    cursor: pointer;
+}
+.contact-us{
+    width: 100%;
+    height: 250px;
+    background: #303030;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-us p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+.contact-us .button-two{
+    background-color:burlywood;
+    color:  rgb(97, 92, 87);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s ;
+}
+.contact-us .button-two:hover{
+    background-color: transparent;
+    border: 2px solid burlywood;
+    cursor: pointer; 
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background: #444141;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: rgb(172, 171, 170);
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+   display: flex; 
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(105, 97, 88);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social :hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.social p{
+    display: block;
+}
+.end{
+    position: absolute;
+    color: black;
+    bottom: 35px;
+    font-size: 18px;
+}
+#menu-icon{
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+}
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+.top i{
+    color: burlywood;
+    background: rgb(128, 138, 138);
+    font-size: 20px;
+    border-radius: 0.5rem;
+    padding: 10px;
+    
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
